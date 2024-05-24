@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edittext_background_new"
+        android:orientation="horizontal"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:contentPaddingBottom="@dimen/_7sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_6sdp">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerVertical="false"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:src="@drawable/ic_profile" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/TvNormalStyle"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toEndOf="@id/ivProfile"
+                android:fontFamily="@font/sf_compact_medium"
+                android:text="ansar abbas"
+                android:textAlignment="viewStart"
+                android:textColor="@color/nav_color_light_black" />
+
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toEndOf="@id/ivProfile"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            style="@style/TvNormalStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sf_compact_medium"
+                            android:gravity="center"
+                            android:text="abc@yopmail.com"
+                            android:textColor="@color/nav_color_light_black"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvPhoneNumber"
+                            style="@style/TvNormalStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sf_compact_medium"
+                            android:gravity="center"
+                            android:text="+92 3001234567"
+                            android:textColor="@color/nav_color_light_black"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            style="@style/TvNormalStyle"
+                            android:layout_width="wrap_content"
+                            android:gravity="start"
+                            android:text="location"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/nav_color_light_black"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/swRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivProductImage"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:src="@drawable/ic_profile" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_toStartOf="@+id/tvCarInfo"
+                            android:background="@color/colorDarkGrey" />
+
+                        <TextView
+                            android:id="@+id/tvCarInfo"
+                            style="@style/TvExtraHeadingStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:text="Add Doctor"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_toEndOf="@+id/tvCarInfo"
+                            android:background="@color/colorDarkGrey" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TvTitleStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="DOCTOR NAME"
+                        android:textStyle="normal" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/edittext_background_new"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/etName"
+                                style="@style/editTextStyle"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="start"
+                                android:hint="Enter Doctor Name"
+                                android:imeOptions="actionNext"
+                                android:maxLines="1"
+                                android:paddingStart="@dimen/_7sdp"
+                                android:paddingTop="@dimen/_7sdp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        style="@style/TvTitleStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="CNIC"
+                        android:textStyle="normal" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvCNIC"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/edittext_background_new"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/etCNIC"
+                                style="@style/editTextStyle"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="start"
+                                android:hint="Enter CNIC"
+                                android:imeOptions="actionNext"
+                                android:maxLines="1"
+                                android:paddingStart="@dimen/_7sdp"
+                                android:paddingTop="@dimen/_7sdp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        style="@style/TvTitleStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="DOCTOR SPECIALIZATION"
+                        android:textStyle="normal" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvItemCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/edittext_background_new"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:id="@+id/spSpec"
+                                style="@style/editTextStyle"
+                                android:layout_height="match_parent"
+                                android:entries="@array/specialization"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorDarkGrey" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorLightGrey"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_4sdp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_base_keyboard_arrow_down_blue"
+                                        app:tint="@color/colorDarkBlue" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        style="@style/TvTitleStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="DOCTOR EMAIL"
+                        android:textStyle="normal" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvItemSKU"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/edittext_background_new"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/etEmailOrUsername"
+                                style="@style/editTextStyle"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="start"
+                                android:hint="Enter Email"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_7sdp"
+                                android:paddingTop="@dimen/_7sdp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RadioGroup
+                        android:id="@+id/rgGenSelection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbDealerGenuine"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:checked="true"
+                            android:text="Male"
+                            android:textColor="@color/colorBlack" />
+
+                        <RadioButton
+                            android:id="@+id/rbOtherGenuine"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Female"
+                            android:textColor="@color/colorBlack" />
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/TvTitleStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="PHONE NUMBER"
+                        android:textStyle="normal" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvPurchasePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/edittext_background_new"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/etPhoneNumber"
+                                style="@style/editTextStyle"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@null"
+                                android:gravity="start"
+                                android:hint="Enter phone number"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_7sdp"
+                                android:paddingTop="@dimen/_7sdp"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        style="@style/TvTitleStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="ADDRESS"
+                        android:textStyle="normal" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvSellingPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/edittext_background_new"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/etAddress"
+                                style="@style/editTextStyle"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@null"
+                                android:gravity="start"
+                                android:hint="Enter ADDRESS"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/_7sdp"
+                                android:paddingTop="@dimen/_7sdp"
+                                android:textAlignment="viewStart"
+
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        style="@style/TvTitleStyle"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="Description"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/etItemDescription"
+                        style="@style/editTextStyle"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/bg_outline_black_button"
+                        android:gravity="start"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:minLines="4"
+                        android:overScrollMode="always"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_7sdp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnAddDoctor"
+                    style="@style/buttonStyle"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:background="@drawable/button_background"
+                    android:text="ADD DOCTOR"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnRemoveDoctor"
+                    style="@style/buttonStyle"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/button_background"
+                    android:text="Remove DOCTOR"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/red"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:minHeight="150dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/progressll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <ProgressBar
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:padding="30dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

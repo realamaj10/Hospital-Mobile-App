@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "485820617913",
+    "project_id": "hospital-management-syst-511bd",
+    "storage_bucket": "hospital-management-syst-511bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485820617913:android:72af38eec6e65514daf768",
+        "android_client_info": {
+          "package_name": "com.hospital_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485820617913-qrm58gk8p942h0pb2q83lkh690r6gt9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hospital_management",
+            "certificate_hash": "b795d4b92de2f0cccdefd57a1cd3511c152a9efc"
+          }
+        },
+        {
+          "client_id": "485820617913-d6h2r6ki1lsod3ija3psa6aft8cnb31j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDurLVT583vcDxVTTvjzx2z0_LzJ3hBVz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485820617913-d6h2r6ki1lsod3ija3psa6aft8cnb31j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485820617913:android:dfa27ad315450161daf768",
+        "android_client_info": {
+          "package_name": "com.rapidzz.hospital_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485820617913-d6h2r6ki1lsod3ija3psa6aft8cnb31j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDurLVT583vcDxVTTvjzx2z0_LzJ3hBVz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485820617913-d6h2r6ki1lsod3ija3psa6aft8cnb31j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

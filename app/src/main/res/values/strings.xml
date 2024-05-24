@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Hospital-management</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">sara@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_doctor">Doctors</string>
+    <string name="menu_patient">Patients</string>
+    <string name="menu_lab">Laboratory</string>
+    <string name="menu_other_staff">Other Staff</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="menu_about_us">About Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="specialization">
+        <item>Professor</item>
+        <item>Assistant Professor</item>
+        <item>FCPS</item>
+        <item>MBBS</item>
+        <item>Nurse</item>
+    </array>
+    <array name="patients">
+        <item>BP</item>
+        <item>Cancer</item>
+        <item>Sugar</item>
+        <item>Eyes</item>
+        <item>Heart</item>
+    </array>
+
+    <array name="staff">
+        <item>Nurse</item>
+        <item>Attendant</item>
+        <item>Security Guard</item>
+    </array>
+    <array name="laboratory">
+        <item>City Scan</item>
+        <item>Angio graphy</item>
+        <item>X-Rays</item>
+        <item>Ultrasound</item>
+        <item>CBC</item>
+    </array>
+</resources>

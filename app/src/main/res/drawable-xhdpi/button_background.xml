@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <gradient android:angle="0" android:centerColor="@color/buttonBlueColor" android:endColor="@color/buttonBlueColor" android:startColor="@color/buttonBlueColor" />
+            <corners android:radius="@dimen/_5sdp" />
+
+        </shape>
+    </item>
+
+</selector>

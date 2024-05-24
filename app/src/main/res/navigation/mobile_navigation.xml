@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.rapidzz.hospital_management.ui.doctor.DoctorFragment"
+        android:label="@string/menu_doctor"
+        tools:layout="@layout/fragment_dcotor">
+        <action
+            android:id="@+id/action_nav_home_to_addDoctorFragment"
+            app:destination="@id/addDoctorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.rapidzz.hospital_management.ui.patient.PatientFragment"
+        android:label="@string/menu_patient"
+        tools:layout="@layout/fragment_patient">
+        <action
+            android:id="@+id/action_nav_gallery_to_addPatientFragment"
+            app:destination="@id/addPatientFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.rapidzz.hospital_management.ui.laboratory.LaboratoryFragment"
+        android:label="@string/menu_lab"
+        tools:layout="@layout/fragment_labortary">
+        <action
+            android:id="@+id/action_nav_slideshow_to_addLaborataryFragment"
+            app:destination="@id/addLaborataryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.rapidzz.hospital_management.ui.DashBoardFragment"
+        android:label="DashBoardFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashBoardFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_otherStaffFragment"
+            app:destination="@id/otherStaffFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDoctorFragment"
+        android:name="com.rapidzz.hospital_management.ui.doctor.AddDoctorFragment"
+        android:label="AddDoctorFragment"
+        tools:layout="@layout/fragment_add_doctor">
+        <argument
+            android:name="model"
+            android:defaultValue="@null"
+            app:argType="com.rapidzz.hospital_management.models.DoctorsModel"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPatientFragment"
+        android:name="com.rapidzz.hospital_management.ui.patient.AddPatientFragment"
+        android:label="AddPatientFragment"
+        tools:layout="@layout/fragment_add_patient">
+        <argument
+            android:name="model"
+            android:defaultValue="@null"
+            app:argType="com.rapidzz.hospital_management.models.PatientModel"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherStaffFragment"
+        android:name="com.rapidzz.hospital_management.ui.otherStaff.OtherStaffFragment"
+        android:label="OtherStaffFragment"
+        tools:layout="@layout/fragment_other_staff">
+        <action
+            android:id="@+id/action_otherStaffFragment_to_addStaffFragment"
+            app:destination="@id/addStaffFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStaffFragment"
+        android:name="com.rapidzz.hospital_management.ui.otherStaff.AddStaffFragment"
+        android:label="AddStaffFragment"
+        tools:layout="@layout/fragment_add_staff">
+    <argument
+        android:name="model"
+        android:defaultValue="@null"
+        app:argType="com.rapidzz.hospital_management.models.StaffModel"
+        app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLaborataryFragment"
+        android:name="com.rapidzz.hospital_management.ui.laboratory.AddLaborataryFragment"
+        android:label="AddLaborataryFragment"
+        tools:layout="@layout/fragment_add_laboratory">
+        <argument
+            android:name="model"
+            android:defaultValue="@null"
+            app:argType="com.rapidzz.hospital_management.models.StaffModel"
+            app:nullable="true" />
+    </fragment>
+</navigation>

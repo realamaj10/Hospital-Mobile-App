@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/drawable-xhdpi/bg_dark_blue_button.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/drawable-xhdpi/bg_outline_black_button.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/drawable-xhdpi/button_background.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/drawable-xhdpi/edittext_layout_background.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/drawable-xhdpi/ic_base_keyboard_arrow_down_blue.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/drawable/edittext_background_new.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22644927536231885" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22644927536231885" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.22644927536231885" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.22644927536231885" />
+        <entry key="app/src/main/res/layout/fragment_about_us.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_add_doctor.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_add_laboratory.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_add_patient.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_add_staff.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_contact_us.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_dcotor.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22644927536231885" />
+        <entry key="app/src/main/res/layout/fragment_labortary.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_other_staff.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/fragment_patient.xml" value="0.13145896656534956" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/rv_dashboard.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/rv_doctors.xml" value="0.22644927536231885" />
+        <entry key="app/src/main/res/layout/rv_lab.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/rv_patient.xml" value="0.2703125" />
+        <entry key="app/src/main/res/layout/rv_staff.xml" value="0.2703125" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.2703125" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.2703125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
